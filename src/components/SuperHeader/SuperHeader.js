@@ -6,6 +6,7 @@ import {COLORS} from '../../constants';
 import SearchInput from '../SearchInput';
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
+import Spacer from "../Spacer";
 
 const SuperHeader = () => {
 	return (
@@ -27,7 +28,10 @@ const Wrapper = styled.div`
     color: ${COLORS.gray[300]};
     background-color: ${COLORS.gray[900]};
     display: flex;
-	padding: 12px 32px;
+	min-height: 40px;
+	align-items: center;
+	padding: 0 32px;
+	gap: 24px;
 `;
 
 const MarketingMessage = styled.span`
@@ -39,8 +43,6 @@ const HelpLink = styled.a`
     color: inherit;
     text-decoration: none;
     outline-offset: 2px;
-	padding-left: 24px;
-	padding-right: 24px;
 
     &:not(:focus-visible) {
         outline: none;
